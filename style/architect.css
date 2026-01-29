@@ -1,0 +1,255 @@
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
+.work-sans-font {
+  font-family: "Work Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+
+/* Shared style */
+.display-flex{
+    display: flex;
+}
+.text-gray{
+    color: #424242;
+}
+.text-light-gray{
+    color: #727272;
+}
+.bg-light{
+    background-color: rgba(255, 144, 14, 0.1);
+
+}
+.btn-primary{
+    background-color: #FF900E;
+    color: white;
+    padding: 20px 25px;
+    font-size: 1.25rem;
+    font-weight: 600;
+    border-radius: 8px;
+    border: none;
+}
+.text-primary{
+    color: #FF900E;
+}
+main{
+    max-width: 1440px;
+    margin: 0 auto;
+}
+main > section{
+    margin-top: 130px;
+}
+.section-title{
+    font-size: 2.8rem;
+    font-weight: 700;
+
+}
+
+
+/* headerstyle */
+
+
+/* navbar style */
+.brand{
+    font-weight: 700;
+    font-size: 2.8rem;
+}
+.navbar{
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.nav-links{
+    text-decoration: none;
+}
+
+.nav-item{
+    list-style: none;
+    margin-right: 30px;
+    font-size: 18px;
+    font-weight: 500;
+
+}
+.navbar, .banner{
+    max-width: 1440px;
+    margin: 0 auto;
+}
+
+
+/* banner styles */
+
+.banner-content{
+    max-width: 850px;
+    margin: 0 auto;
+    text-align: center;
+    margin-bottom: 50px;
+}
+.banner-titel{
+    font-weight: 700px;
+    font-size: 4rem;
+}
+.banner-img{
+    width: 100%;
+}
+/* team and feature  */
+.teams{
+    align-items: center;
+}
+.team-img-container{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 24px;
+}
+.our-feature{
+    margin-left: 130px;
+    max-width: 530px;
+}
+
+#quick-list{
+    font-weight: 500;
+}
+
+
+
+
+/* Features sections related styles */
+
+#feature-section-titel{
+    border-left: 5px solid #FF900E;
+    padding-left: 20px;
+}
+.feature{
+    gap: 140px;
+}
+
+.feature-card .feature-titel{
+    margin-top: 0px;
+    margin-bottom: 0px;
+    font-weight: 600;
+    font-size: 1.25rem;
+}
+.feature-card{
+    margin: 20px;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.6);
+}
+
+
+#exexperiance-badge{
+    padding: 45px 42px;
+    font-size: 1.5rem;
+    font: 500;
+    margin-left: -100px;
+    margin-top: -100px;
+}
+#experiance-year{
+    font-size: 4rem;
+    font-weight: 700;
+}
+.feature-architect img{
+    width: 100%;
+
+}
+
+
+
+/* Some fact related style */
+
+.facts-container{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    justify-content: center;
+}
+.fact-card{
+    border: 1px solid #FF900E;
+    width: 240px;
+    height: 240px;
+    border-radius: 8px;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+.fact-number{
+    font-size: 2.8rem;
+    font-weight: 600;
+    margin-top: 5px;
+    margin-bottom: 10px;
+}
+.fact-name{
+    font-size: 1.25rem;
+    font-weight: 600;
+    margin: 10px;
+}
+.fact-discription{
+    max-width: 540px;
+
+}
+
+/* Sponsors related style */
+
+.sponsors-info{
+    max-width: 540px;
+    margin: 50px auto;
+    text-align: center;
+}
+.sponsors-company{
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+}
+.sponsors-company img{
+    filter: grayscale(100%);
+}
+
+/* resposive media query */
+
+/* Small size device */
+
+@media screen and (max-width: 576px) {
+    .navbar, 
+    .nav-links, 
+    .teams
+    .feature{
+        flex-direction: column;
+    }
+    .team-img-container,
+    .facts-container,
+    .sponsors-company{
+        grid-template-columns: 1fr;
+    }
+    .facts-container{
+        justify-items: center;
+        gap: 24px;
+    }
+    .sponsors-company{
+        justify-items: center;
+        gap: 50px;
+    }
+    .our-feature{
+        margin-left: 20px;
+    }
+    #experiance-badge{
+        margin-top: 20px;
+        margin-left: 20px;
+    }
+}
+
+/* mediam size device */
+@media screen and (min-width:576px) and (max-width:992px) {
+    .teams,
+    .feature{
+        flex-direction: column;
+    }
+    .our-feature{
+        margin: 20px auto;
+    }
+    .sponsors-company,
+    .facts-container{
+        grid-template-columns: repeat(2,1fr);
+        gap: 50px;
+        justify-items: center;
+
+    }
+}

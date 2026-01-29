@@ -210,7 +210,7 @@ main > section{
 @media screen and (max-width: 576px) {
     .navbar, 
     .nav-links, 
-    .teams
+    .teams,
     .feature{
         flex-direction: column;
     }
@@ -251,5 +251,9 @@ main > section{
         gap: 50px;
         justify-items: center;
 
+    }
+     #experiance-badge{
+        margin-top: 20px;
+        margin-left: 20px;
     }
 }
